@@ -36,15 +36,15 @@
     transform: rotate(360deg);
   }
 }
-.container {
+.container1 {
   position: relative;
-  max-width: 665px; /* Maximum width */
+  max-width: 705px; /* Maximum width */
   margin:  auto;
   margin-bottom: 10px;
   margin-top: 10px; /* Center it */
 }
 
-.container .content {
+.container1 .content1 {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */

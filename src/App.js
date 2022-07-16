@@ -1,18 +1,21 @@
 import beers from "./assets/beers.png"
 import newbeer from "./assets/new-beer.png"
+import { Routes, Route } from "react-router-dom";
 import randombeer from "./assets/random-beer.png"
 import './App.css';
-
+import Navbar from "./Navbar"
 function App() {
  
  
  
   return (
+    
     <div className="App">
+      <Navbar/>
       <a style={{ display: "flex", margin: "auto" }} href="/beers">
-        <div className="container">
+        <div className="container1">
           <img src={beers} />
-          <div className="content">
+          <div className="content1">
              <h4>Beers</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -23,9 +26,9 @@ function App() {
 
       </a>
       <a style={{ display: "flex", margin: "auto" }} href="/newbeer">
-        <div className="container">
+        <div className="container1">
           <img src={newbeer} />
-          <div className="content">
+          <div className="content1">
           <h4>New Beer</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -36,9 +39,9 @@ function App() {
 
       </a>
       <a style={{ display: "flex", margin: "auto" }} href="/randombeer">
-        <div className="container">
+        <div className="container1">
           <img src={randombeer} />
-          <div className="content">
+          <div className="content1">
           <h4>Random Beer</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -49,13 +52,7 @@ function App() {
 
 
       <div>
-     <Routes>
-     <Route path="/countries" element={<CountriesList countries={countriesData} />}
-            />
-    
-    <Route path="/countries/:countriesId"  element={<CountryPage />} />
-    
-     </Routes>
+
      </div>
 
 
