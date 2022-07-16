@@ -52,6 +52,9 @@ console.log()
            <h4>{beers.name}</h4>
            <h6>{beers.tagline}</h6>
            <h6>Created By:{beers.tagline}</h6>
+           <h6>{beers.description}</h6>
+           <h6>First brewed{beers.first_brewed}</h6>
+           <h6>{beers.food_pairing}</h6>
             </div>    
       }
              

@@ -54,7 +54,7 @@ function Main() {
 
      </div>
 
-     BeerList
+     
 
 
     </div>
