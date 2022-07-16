@@ -6,6 +6,7 @@ import Navbar from "./Navbar"
 import Main from "./pages/main";
 import BeerList from "./pages/beers";
 import "./App.css";
+import Beer from "./pages/beer";
 function App() {
  
  
@@ -15,6 +16,8 @@ function App() {
     <Routes>
    <Route path="/" element={< Main />} />
    <Route path="/beers" element={<BeerList/>} />
+   <Route path="/beer/:beerId"  element={<Beer />} />
+    
    </Routes>
  
      
