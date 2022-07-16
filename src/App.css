@@ -53,3 +53,11 @@
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
 }
+.imgtmbl {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 150px;
+  margin: 5px;
+  max-height: 300px ;
+}
