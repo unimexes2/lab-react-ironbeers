@@ -29,8 +29,8 @@ useEffect(() => {
     padding: "10px",
     fontFamily: "Arial",
     maxheight:"300px",
-  allignItem:"left",
-    overflow: 'scroll',
+  allignItem:"center",
+   
      
   };
 console.log()
@@ -38,7 +38,7 @@ console.log()
  return (
 <div>
 <div className="col-5" style={{mystyle}}>
-            <div className="list-group"style={{height:'500px',overflow: 'scroll'}}>
+            <div className="list-group"style={{height:'500px'}}>
            
             {
                 

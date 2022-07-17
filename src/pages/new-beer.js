@@ -62,7 +62,7 @@ function AddBeer() {
         />
         </div> 
         <label>Description:</label> <div>
-        <input
+        <textarea
           type="text"
           name="description"
           onChange={(e) => setDescription(e.target.value)}

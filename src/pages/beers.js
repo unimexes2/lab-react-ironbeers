@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 function BeerList  (props) {
-const [beers, setBeers] = useState([]);
-
+var [beers, setBeers] = useState([]);
+const[search,setSearch]=useState([])
 
   // This effect depends on `props.projects`.
   // It will run on initial render and every time
@@ -13,9 +13,27 @@ const [beers, setBeers] = useState([]);
       .then((response) => {
       
         setBeers([...response.data]);
-         
+        setSearch([...response.data]);
       });
   }, []);
+
+
+  const doSearch=(element)=>{
+    beers=[...search];
+    console.log("serch",search)
+  let searchResult=  beers.filter((beer)=>{
+console.log(beer.name,"beer name",element)
+if (beer.name.includes(element)){
+    return beer
+}
+
+    })
+
+    setBeers(searchResult);
+
+};
+
+
 
  console.log(beers)
   const mystyle = {
@@ -23,20 +41,26 @@ const [beers, setBeers] = useState([]);
     backgroundColor: "DodgerBlue",
     padding: "10px",
     fontFamily: "Arial",
-    maxheight:"300px",
-  allignItem:"left",
+ 
+  allignItem:"center",
     overflow: 'scroll',
      
   };
 console.log()
   return (
-<div>
+<div style={{display:'flex',flexDirection: 'row'}}>
+
 <div className="col-5" style={{mystyle}}>
-            <div className="list-group"style={{height:'500px',overflow: 'scroll'}}>
+            <div className="list-group"style={{height:'600px',overflow: 'scroll'}}>
            
             {beers.map((beer) => {
                 
       
+               console.log("arr",beers)
+
+
+
+
 
     
         return (   
@@ -55,6 +79,18 @@ console.log()
               
             </div>
 </div>
+<div>
+<label> Search beer(case sensitive)</label>
+<input name="Search"
+          onChange={(e) => doSearch(e.target.value)}
+          >
+
+          </input>
+
+</div>
+
+
+
 </div>
 )
 }
