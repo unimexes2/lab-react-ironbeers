@@ -24,7 +24,7 @@ function Main() {
         </div>
 
       </a>
-      <a style={{ display: "flex", margin: "auto" }} href="/newbeer">
+      <a style={{ display: "flex", margin: "auto" }} href="/addbeer">
         <div className="container1">
           <img src={newbeer} />
           <div className="content1">

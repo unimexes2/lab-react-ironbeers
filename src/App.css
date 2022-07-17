@@ -43,6 +43,33 @@
   margin-bottom: 10px;
   margin-top: 10px; /* Center it */
 }
+.containeradd{
+  position: relative;
+  max-width: 705px; /* Maximum width */
+  margin:  auto;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Center it */
+  display: flex;
+  padding:20px;
+  flex-direction: column  ;
+}
+.butSubmit{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  background-color: #008CBA;
+
+
+
+}
+
+
 
 .container1 .content1 {
   position: absolute; /* Position the background text */

@@ -8,6 +8,7 @@ import BeerList from "./pages/beers";
 import "./App.css";
 import Beer from "./pages/beer";
 import BeerRandom from "./pages/random-beer";
+import AddBeer from "./pages/new-beer";
 function App() {
  
  
@@ -19,6 +20,7 @@ function App() {
    <Route path="/beers" element={<BeerList/>} />
    <Route path="/beer/:beerId"  element={<Beer />} />
    <Route path="/randombeer"  element={<BeerRandom />} />
+   <Route path="/addbeer"  element={<AddBeer />} />
    </Routes>
  
   
